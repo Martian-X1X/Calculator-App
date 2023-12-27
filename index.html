@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/e8/09/ff/e809ff380655b17e3dd1305039df32b3.png">
+
+    <title>Pandu's Calculator</title>
+</head>
+<body>
+    <!--Pre-Loader-->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="https://www.seekpng.com/png/detail/877-8772537_bare-bears-gambar-we-bare-bears.png" alt="Loading" class="preloader-image">
+        </div>
+    </div>
+    <!--calculator-->
+    <div class="calculator" id="calculator">
+        <div class="display" id="display">0</div>
+        <button class="btn" onclick="clearDisplay()">AC</button>
+        <button class="btn" onclick="deleteLast()">DEL</button>
+        <button class="btn" onclick="appendDecimal()">.</button>
+        <button class="btn operator" onclick="appendOperator('/')">/</button>
+        <button class="btn" onclick="appendNumber('7')">7</button>
+        <button class="btn" onclick="appendNumber('8')">8</button>
+        <button class="btn" onclick="appendNumber('9')">9</button>
+        <button class="btn operator" onclick="appendOperator('*')">*</button>
+        <button class="btn" onclick="appendNumber('4')">4</button>
+        <button class="btn" onclick="appendNumber('5')">5</button>
+        <button class="btn" onclick="appendNumber('6')">6</button>
+        <button class="btn operator" onclick="appendOperator('-')">-</button>
+        <button class="btn" onclick="appendNumber('1')">1</button>
+        <button class="btn" onclick="appendNumber('2')">2</button>
+        <button class="btn" onclick="appendNumber('3')">3</button>
+        <button class="btn operator" onclick="appendOperator('+')">+</button>
+        <button class="btn" onclick="appendNumber('00')">00</button>
+        <button class="btn" onclick="appendNumber('0')">0</button>
+        
+        <button class="btn operator" onclick="calculate()">=</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
